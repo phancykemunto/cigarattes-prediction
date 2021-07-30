@@ -1,0 +1,23 @@
+<div class="login">
+    <h1>predict price</h1>
+    <h3>enter the following values to predict cigarattes smoking</h3>
+    <!--main input for receiving query to our ML-->
+    <form action="{{ url_fot('predict')}}"method="post">
+        <input type="text" name="state" placeholder="State" required="required" />
+        <input type="text" name="year" placeholder="Year" required="required" />
+        <input type="text" name="pop"  placeholder="Pop" required="required" />
+        <input type="text" name="pop16" placeholder="Pop16" required="required" />
+        <input type="text" name="cpi" placeholder="Cpi" required="required" />
+        <input type="text" name="ndi" placeholder="Ndi" required="required" />
+        <input type="text" name="sales" placeholder="Sales" required="required" />
+        <input type="text" name="pimin" placeholder="Pimin" required="required" />
+        <button type="submit" class="btn">predict</button>
+
+
+    </form>
+
+<br>
+<br>
+{{ prediction_text }}
+
+</div>
