@@ -2,7 +2,7 @@
     <h1>predict price</h1>
     <h3>enter the following values to predict cigarattes smoking</h3>
     <!--main input for receiving query to our ML-->
-    <form action="{{ url_fot('predict')}}"method="post">
+    <form action="{{ url_for('predict')}}"method="post">
         <input type="text" name="state" placeholder="State" required="required" />
         <input type="text" name="year" placeholder="Year" required="required" />
         <input type="text" name="pop"  placeholder="Pop" required="required" />
